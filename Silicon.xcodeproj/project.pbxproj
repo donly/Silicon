@@ -41,6 +41,13 @@
 			remoteGlobalIDString = 0555EBA01EF3DDA10016167F;
 			remoteInfo = Relauncher;
 		};
+		60D5145D257F796600080D8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 055568362567831700B42091 /* GitHubUpdates.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 05F82B241EF32EA700EC8A93;
+			remoteInfo = GitHubUpdates;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -351,6 +358,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				60D5145E257F796600080D8E /* PBXTargetDependency */,
 			);
 			name = Silicon;
 			productName = Silicon;
@@ -469,6 +477,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		60D5145E257F796600080D8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GitHubUpdates;
+			targetProxy = 60D5145D257F796600080D8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		0586D54E256696DA00CBBD48 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
@@ -526,8 +542,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Silicon/Silicon.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J5PR93692Y;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Silicon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -536,6 +552,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DigiDNA.Silicon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
